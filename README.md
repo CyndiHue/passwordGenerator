@@ -1,5 +1,3 @@
-# passwordGenerator
-
 # 03 JavaScript: Password Generator
 
 ## Your Task
