@@ -26,11 +26,12 @@ function generatePassword(){
   
 
   let passwordLength = prompt("How many characters would like your password to have (must have at least 8 characters but no more than 128 characters?")
-  let password= passwordLength;
+  let password= "";
 
   for (let i = 0; i < passwordLength; i++) {
     
-    password+= builtArray;
+    password+= builtArray[Math.floor(Math.random()*builtArray.length)];
+    // need to make this random 1 value not full value
     
   }
 
