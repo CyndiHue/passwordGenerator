@@ -51,13 +51,15 @@ function generatePassword(){
 }
 
 
-let passwordText = document.querySelector("#password")
+// let passwordText = document.querySelector("#password")
 
 function writePassword() {
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  if (passwordText.value = password){
+    alert(password)
+  } ;
 }
 
 generateBtn.addEventListener("click", writePassword);
