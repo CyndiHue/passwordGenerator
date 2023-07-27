@@ -10,3 +10,6 @@ select generate password button and select ok for the character types you wish t
 ![
     
 ](image.png)
+![image](https://github.com/CyndiCodes/passwordGenerator/assets/135991739/88c0275f-5577-4bd2-9c26-5c0deaf56239)
+
+https://cyndicodes.github.io/passwordGenerator/ 
