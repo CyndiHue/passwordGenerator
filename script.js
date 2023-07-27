@@ -4,7 +4,7 @@ let lowerAlphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 let upperAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 let numbers = [0,1,2,3,4,5,6,7,8,9]
 let specialCharacters = ['#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '!', '"'];
-// let charactersAllowed = []
+
 
 function generatePassword(){
   let builtArray =[]
@@ -29,11 +29,11 @@ function generatePassword(){
   
   let passwordLength = prompt("How many characters would like your password to have (must have at least 8 characters but no more than 128 characters?")
   let password= "";
-
+  
+  // code for parameters and alert when parameter not met
   if (builtArray.length === 0){
     alert("please try again, you must have at least one character type");
   }
-
   if (passwordLength >= 8 && passwordLength <= 128 ){
 
     for (let i = 0; i < passwordLength; i++) {
@@ -51,15 +51,15 @@ function generatePassword(){
 }
 
 
-// let passwordText = document.querySelector("#password")
-
 function writePassword() {
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
   if (passwordText.value = password){
     alert(password)
-  } ;
+    
+  };
+  
 }
 
 generateBtn.addEventListener("click", writePassword);
